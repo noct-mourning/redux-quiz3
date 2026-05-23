@@ -1,16 +1,49 @@
-# React + Vite
+# Task Manager — Redux Toolkit
+> Finals Hands-On Quiz #3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React app that manages tasks using Redux Toolkit for state management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Requirements Met
 
-## React Compiler
+| Requirement | Status |
+|---|---|
+| Redux Toolkit | ✅ |
+| Redux store via `configureStore()` | ✅ |
+| Slice named `taskSlice` | ✅ |
+| Input and add tasks | ✅ |
+| Display all tasks | ✅ |
+| `useDispatch()` and `useSelector()` | ✅ |
+| Prevents empty tasks | ✅ |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── app/store.js                 # Redux store
+├── features/tasks/taskSlice.js  # taskSlice
+├── components/
+│   ├── TaskInput.jsx            # useDispatch()
+│   └── TaskList.jsx             # useSelector()
+├── App.jsx
+└── main.jsx                     # Provider
+```
+
+---
+
+## Setup
+
+```bash
+npm install
+npm install @reduxjs/toolkit react-redux
+npm run dev
+```
+
+---
+
+## Deployment
+
+Live at: [taskslice.vercel.app](https://taskslice.vercel.app)
