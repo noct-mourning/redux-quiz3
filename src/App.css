@@ -132,7 +132,7 @@
 .footer-tag { margin-left: auto; font-size: 9px; color: #333344; letter-spacing: 1px; border: 1px solid #1e1e2e; padding: 2px 8px; }
 
 /* Responsive */
- @ *media (max-width: 600px) {
+ @media (max-width: 600px) {
  .app-header { padding: 20px; flex-direction: column; gap: 10px; }
  .app-title { font-size: 26px; }
  .input-section { padding: 24px 20px 8px; }
